@@ -7,7 +7,7 @@ const Banner = () => {
     const [movie, setMovie] = useState([])
     function truncate(string, n){
         console.log(string)
-        return string.length > n ? string.substr(0, n-1) + '...' : string
+        return string > n ? string.substr(0, n-1) + '...' : string
     }
     console.log(movie)
 
